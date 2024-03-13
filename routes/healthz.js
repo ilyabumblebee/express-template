@@ -4,7 +4,7 @@ const router = express.Router()
 
 /* GET healthz */
 router.get('/', async (req, res) => {
-  res.status(201).send("OK");
+  res.status(200).json({ status: "success", message: "Service is up and running." })
 });
 
-module.exports = router;
+module.exports = router
