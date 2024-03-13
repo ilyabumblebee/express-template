@@ -17,8 +17,7 @@ app.use(express.json())
 
 /* GET routes */
 
-const healthz = require('./routes/healthz')
-app.use('/healthz', healthz)
+app.use('/healthz', require('./routes/healthz'))
 
 /* ---------- */
 
